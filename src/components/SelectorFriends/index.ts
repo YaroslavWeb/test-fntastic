@@ -1,0 +1,1 @@
+export { SelectorFriends } from "./SelectorFriends"

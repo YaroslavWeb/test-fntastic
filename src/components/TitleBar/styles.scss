@@ -1,0 +1,42 @@
+@import "../../styles/vars.scss";
+
+.title-bar {
+  -webkit-app-region: drag;
+  height: $height-title-bar;
+  padding: 0px;
+  margin: 0px;
+  user-select: none;
+  background: $color-2;
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    color: $color-1;
+    line-height: 32px;
+    font-size: 14px;
+    margin-left: 12px;
+  }
+
+  &__actions {
+    -webkit-app-region: no-drag;
+
+    button {
+      height: $height-title-bar;
+      width: $height-title-bar;
+      background-color: transparent;
+      border: none;
+      color: $color-1;
+      cursor: pointer;
+
+      font-size: 16px;
+
+      &:hover {
+        background-color: $color-2-lighter;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

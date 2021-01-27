@@ -1,0 +1,85 @@
+@import "../../styles/vars.scss";
+
+.server-info {
+  background: $color-2;
+  position: relative;
+  height: 100%;
+  padding: 1rem;
+  display: grid;
+  grid: 70% 30% / 1fr;
+  box-sizing: border-box;
+  color: $color-1;
+
+  &__info {
+    height: 100%;
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 200;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  &__switcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__profile {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__avatar {
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid $color-4;
+    height: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: none;
+    color: $color-1;
+    font-size: 24px;
+    transition: opacity 0.5s, background 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+      background: rgba($color-2-darker, 0.33);
+    }
+  }
+
+  &__name {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+
+    > button {
+      width: 50px;
+      height: 40px;
+    }
+  }
+}

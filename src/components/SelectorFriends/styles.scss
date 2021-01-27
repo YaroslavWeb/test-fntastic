@@ -1,0 +1,36 @@
+@import "../../styles/vars.scss";
+
+.selector-friends {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__friend {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid $color-2-lighter;
+    position: relative;
+  }
+
+  &__overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: none;
+    color: $color-1;
+    font-size: 24px;
+    transition: opacity 0.5s, background 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+      background: rgba($color-2-darker, 0.33);
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../../styles/vars.scss";
+
+.profile-modal {
+  &__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    border: 2px solid $color-2-lighter;
+  }
+}

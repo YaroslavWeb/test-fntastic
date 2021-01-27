@@ -1,0 +1,46 @@
+@import "../../styles/vars.scss";
+
+.button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  outline: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  border-radius: 5px;
+
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  color: $color-1;
+  background: $color-2;
+
+  &:hover {
+    background: $color-2-lighter;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &_fullWidth {
+    width: 100%;
+  }
+
+  &_primary {
+    border: 2px solid $color-2-lighter;
+  }
+
+  &_success {
+    border: 2px solid $color-4;
+  }
+
+  &_error {
+    border: 2px solid $color-6;
+  }
+}

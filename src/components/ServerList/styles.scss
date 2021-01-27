@@ -1,0 +1,12 @@
+@import "../../styles/vars.scss";
+
+.server-list {
+  background: $color-2;
+  height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  &__list {
+    overflow-y: auto;
+  }
+}
