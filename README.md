@@ -13,7 +13,7 @@
 - TypeScript.
 - Overmind - стейт менеджер.
 - SCSS.
-- BEM-CN - Помошник в написании класов неймов для тегов по методологии БЭМ.[пакет](https://www.npmjs.com/package/bem-cn).
+- BEM-CN - [пакет](https://www.npmjs.com/package/bem-cn).
 - React-tooltip - [пакет](https://www.npmjs.com/package/react-tooltip).
 
 ---
